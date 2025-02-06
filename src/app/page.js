@@ -185,6 +185,9 @@ export default function Home() {
                         <th className="px-4 md:px-6 py-3 text-left text-xs font-medium text-neutral-500 uppercase tracking-wider">
                           Mobile
                         </th>
+                        <th className="px-4 md:px-6 py-3 text-left text-xs font-medium text-neutral-500 uppercase tracking-wider">
+                          Email
+                        </th>
                         <th className="hidden md:table-cell px-6 py-3 text-left text-xs font-medium text-neutral-500 uppercase tracking-wider">
                           Last Consultation
                         </th>
@@ -215,6 +218,11 @@ export default function Home() {
                           <td className="px-4 md:px-6 py-4 whitespace-nowrap">
                             <div className="text-sm text-neutral-500">
                               {patient.mobile_number}
+                            </div>
+                          </td>
+                          <td className="px-4 md:px-6 py-4 whitespace-nowrap">
+                            <div className="text-sm text-neutral-500">
+                              {patient.email || "-"}
                             </div>
                           </td>
                           <td className="hidden md:table-cell px-6 py-4 whitespace-nowrap">
